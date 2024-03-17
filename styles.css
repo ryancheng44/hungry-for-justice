@@ -1,0 +1,192 @@
+/* look into flexbox, grid, em/en/vh/vw, media queries, sveltekit, npm */
+
+:root {
+  --primary: #3EB489;
+  --secondary: #FFFFFF;
+  --tertiary: #095256;
+  --text: #808080;
+}
+
+body {
+  color: var(--primary);
+  font-family: 'Roboto', sans-serif;
+  margin: 0vh 0vw;
+  box-sizing: border-box;
+}
+
+nav {
+  padding: 3vh 2vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  position: sticky;
+  top: 0vh;
+  background-color: var(--secondary);
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: 0.25s all;
+}
+
+a:hover {
+  color: var(--tertiary);
+  transition: 0.25s all;
+}
+
+.left a {
+  font-size: 1.5em;
+}
+
+.left a:hover {
+  font-size: 1.75em;
+}
+
+.right a {
+  margin-left: 2vw;
+}
+
+.right a:hover {
+  text-decoration: underline;
+}
+
+#hero {
+  background: url(images/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#hero h1 {
+  font-size: 5em;
+  margin: 0vh 0vw;
+  color: var(--secondary);
+  text-align: right;
+  margin-right: 2vw;
+}
+
+#hero h2 {
+  font-size: 2em;
+  margin: 0vh 0vw;
+  color: var(--secondary);
+  text-align: right;
+  margin-right: 2vw;
+}
+
+#get-involved {
+  padding: 3vh 2vw;
+}
+
+#get-involved h1 {
+  margin: 0vh 0vw;
+  font-size: 3em;
+  font-weight: normal;
+  color: var(--primary);
+}
+
+#get-involved h2 {
+  margin: 3vh 0vw;
+  font-weight: normal;
+  color: var(--tertiary);
+}
+
+#get-involved p {
+  margin: 0vh 0vw;
+  color: var(--text);
+}
+
+.triple-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 3vh 2vw;
+  background-color: aliceblue;
+}
+
+.triple-section div {
+  margin-right: 2vw;
+}
+
+.triple-section div:last-child {
+  margin-right: 0vw;
+}
+
+.triple-section figure {
+  margin: 0vh 0vw;
+}
+
+.triple-section img {
+  height: 30vh;
+  max-width: 100%;
+  object-fit: contain;
+  display: block;
+  margin: 0vh auto;
+}
+
+.triple-section figcaption {
+  color: var(--tertiary);
+  text-align: center;
+  margin: 3vh 0vw;
+}
+
+.triple-section h3 {
+  margin: 3vh 0vw;
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: normal;
+  color: var(--tertiary);
+}
+
+.triple-section p {
+  margin: 0vh 0vw;
+  color: var(--text);
+}
+
+.triple-section button {
+  width: auto;
+  display: block;
+  margin: 0vh auto;
+  margin-top: 3vh;
+  padding: 3vh 2vw;
+  background: var(--primary);
+  color: var(--secondary);
+  border: none;
+  font-size: 1.25em;
+  cursor: pointer;
+  transition: 0.25s all;
+}
+
+.triple-section button:hover {
+  background: var(--tertiary);
+  transition: 0.25s all;
+}
+
+.triple-section a {
+  color: var(--secondary);
+}
+
+.triple-section a:hover {
+  color: var(--secondary);
+}
+
+footer {
+  padding: 3vh 2vw;
+  background: #3EB489;
+  color: white;
+  font-size: 1em;
+}
+
+footer div:first-child {
+  font-size: 1.25em;
+  padding-bottom: 1vh;
+}
+
+footer div:last-child {
+  font-size: 0.75em;
+  padding-top: 1vh;
+}
